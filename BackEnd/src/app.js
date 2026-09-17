@@ -10,7 +10,8 @@ app.use(cookiesParser());
 const upload = multer({
     storage:multer.memoryStorage()
 })
- 
+const predictionRoutes = require("./routes/prediction.routes");
+app.use("/api/predict",predictionRoutes);
  
 app.use("/api/auth",authRoutes)
 app.use("/api/upload",uploadRoutes)

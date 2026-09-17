@@ -8,7 +8,7 @@ function mockPrediction(row) {
             attackType: "DDoS Attack",
             probability: 0.94,
             severityScore: 10,
-            timewindow: "Next 5 minutes"
+            timeWindow: "Next 5 minutes"
         };
     }
 
@@ -17,7 +17,7 @@ function mockPrediction(row) {
             attackType: "Brute Force Attack",
             probability: 0.87,
             severityScore: 8,
-            timewindow: "Next 5 minutes"
+            timeWindow: "Next 5 minutes"
         };
     }
 
@@ -25,7 +25,7 @@ function mockPrediction(row) {
         attackType: "Normal",
         probability: 0.91,
         severityScore: 2,
-        timewindow: "Next 5 minutes"
+        timeWindow: "Next 5 minutes"
     };
 }
 

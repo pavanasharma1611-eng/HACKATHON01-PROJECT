@@ -1,0 +1,15 @@
+$kind: http-request
+name: localhost:3000/api/upload/file
+description: ""
+url: localhost:3000/api/upload/file
+method: POST
+body:
+  type: formdata
+  content:
+    - type: file
+      key: file
+      src:
+        - /C:/Users/pavan/Downloads/cyber_traffic_test_50.csv
+      description: ""
+      disabled: false
+order: 1789683947290
