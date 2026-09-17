@@ -1,0 +1,12 @@
+const mongoose =require("mongoose");
+const predictionSchema = new mongoose.Schema({
+    attackType:String,
+    probability:Number,
+    severityScore:Number,
+    timeStamp:Date,
+    timeWindow:String
+})
+const predictionModel= mongoose.model("predictions", predictionSchema)
+
+module.exports=predictionModel
+

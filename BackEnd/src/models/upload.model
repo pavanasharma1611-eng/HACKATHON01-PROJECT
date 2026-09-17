@@ -1,0 +1,11 @@
+const mongoose = require("mongoose");
+const uploadSchema= new mongoose.Schema({
+   
+    filename:String,
+    mimetype:String,
+    size:Number,
+    data:Buffer,
+})
+const uploadModel= mongoose.model("files",uploadSchema)
+
+module.exports=uploadModel;
